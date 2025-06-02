@@ -1,20 +1,26 @@
 /* estilo geral */
 
-html {
-    font-size: 16px;
+/* parte 5 meet */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+/* parte 5 meet */
+
+/*  parte 1 */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
     color: black;
-    height: 100vh;
+    /* height: 100vh; */
 
     margin: 0px;
 
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 header {
@@ -30,6 +36,48 @@ header h1 {
 
     margin: 0px;
 }
+
+/*  parte 1 */
+
+/* parte 6 meet */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    background-color: hsl(0, 0%, 20%);
+    
+    padding: 0.5rem 0;
+}
+
+nav a {
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('terra-3.avif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 300px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero h2 {
+    /* paramos aqui */
+}
+
+/* parte 6 meet */
+
+/* 
+parte 2 */
 
 main {
     max-width: 1000px;
@@ -47,10 +95,14 @@ main {
 
 .curiosidades {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
 }
+
+
+/*  parte 2 */
+/*  parte 3 */
 
 .curiosidade-card {
     transition: transform 0.3s ease;
@@ -65,13 +117,18 @@ main {
 }
 
 .curiosidade-card:hover {
-    transform: translate(0px, -5px) scale(1.05);
-    box-shadow: 0px 0px 12.5px rgba(0, 0, 0, 0.1);
+
+    /* transform: translate(0px, -5px) scale(1.05);
+    box-shadow: 0px 0px 12.5px rgba(0, 0, 0, 0.1); */
 }
 
 .curiosidade-card h3 {
     color:  rgb(80, 80, 241);
 }
+
+
+/*  parte 3 */
+/*  parte 4 */
 
 footer {
     background-color: lightgreen;
@@ -93,3 +150,5 @@ footer {
         width: 90%;
     }
 }
+
+/*  parte 4 */
