@@ -1,14 +1,11 @@
 /* estilo geral */
 
-/* parte 5 meet */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    cursor: default;
 }
-/* parte 5 meet */
-
-/*  parte 1 */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -37,10 +34,6 @@ header h1 {
     margin: 0px;
 }
 
-/*  parte 1 */
-
-/* parte 6 meet */
-
 nav {
     display: flex;
     justify-content: center;
@@ -55,6 +48,7 @@ nav a {
     font-weight: bold;
     color: whitesmoke;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .hero {
@@ -62,7 +56,7 @@ nav a {
     justify-content: center;
     align-items: center;
 
-    background-image: url('terra-3.avif');
+    background-image: url('header.avif');
     background-size: cover;
     background-position: center;
     color: white;
@@ -71,13 +65,10 @@ nav a {
 }
 
 .hero h2 {
-    /* paramos aqui */
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0;
 }
-
-/* parte 6 meet */
-
-/* 
-parte 2 */
 
 main {
     max-width: 1000px;
@@ -85,6 +76,10 @@ main {
     padding: 1rem;
     
     margin: 2rem auto auto auto;
+}
+
+h3 {
+    font-weight: lighter;
 }
 
 .intro {
@@ -100,10 +95,6 @@ main {
     gap: 1rem;
 }
 
-
-/*  parte 2 */
-/*  parte 3 */
-
 .curiosidade-card {
     transition: transform 0.3s ease;
 
@@ -117,18 +108,65 @@ main {
 }
 
 .curiosidade-card:hover {
-
-    /* transform: translate(0px, -5px) scale(1.05);
-    box-shadow: 0px 0px 12.5px rgba(0, 0, 0, 0.1); */
+    transform: translate(0px, -2.5px) rotate(1deg);
+    box-shadow: 0px 0px 12.5px rgba(0, 0, 0, 0.1);
 }
 
 .curiosidade-card h3 {
     color:  rgb(80, 80, 241);
 }
 
+/* galeria aqui! */
 
-/*  parte 3 */
-/*  parte 4 */
+.video-section, .galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+
+    /* background-color: red; */
+}
+
+video, iframe {
+    margin: 30px auto;
+   
+    width: 80%;
+}
+
+
+video, iframe {
+    background-color: green;
+    padding: 5px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: green;
+    border-radius: 12.5px;
+}
+
+img {
+    background-color: lightgreen;
+    width: 70%;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 300ms;
+
+    padding: 5px;
+
+    border-style: solid;
+    border-width: 5px;
+    border-color: lightgreen;
+    border-radius: 50px;
+
+    margin: 10px 10px;
+}
+
+img:hover {
+    rotate: -1deg;
+    translate: 0px -5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
 
 footer {
     background-color: lightgreen;
@@ -140,7 +178,6 @@ footer {
     margin-top: 2rem;
 }
 
-/* responsividade */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.5rem;
@@ -151,4 +188,16 @@ footer {
     }
 }
 
-/*  parte 4 */
+@media (min-width: 900px) {
+    .galeria {
+        flex-direction: row;
+    }
+
+    img {
+        max-height: 200px;
+    }
+}
+
+.lu {
+    margin-left: 10px;
+}
