@@ -193,6 +193,8 @@ video, iframe {
     border-radius: 12.5px;
     
     margin: 30px auto;
+
+    cursor: pointer;
 }
 
 img {
