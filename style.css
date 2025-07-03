@@ -28,6 +28,16 @@ body {
     animation-timing-function: ease;
 }
 
+::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar- {
+    background-color: rgb(255, 0, 100);
+
+    border-radius: 5px;
+}
+
 @keyframes white-whitesmoke {
     0%, 100% {
         background-color: white;
@@ -64,7 +74,7 @@ header {
     }
 
     66% {
-        background-color: rgb(255, 0, 100)
+        background-color: rgb(255, 0, 100);
     }
 }
 
@@ -182,26 +192,31 @@ a.h3 {
 
     overflow: auto;
     transition: 300ms;
+
+    padding-bottom: 12.5px;
 }
 
-.galeria {
+.video-section {
+    border-radius: 10px;
+}
+
+.video-section, .galeria {
     margin-top: 25px;
 }
 
 
 video, iframe {
-    background-color: lightblue;
+    background-color: black;
     width: 100%;
+    box-shadow: 0px 0px 10px rgb(255, 0, 100);
     transition: 0.1s;
     
     border-style: solid;
     border-width: 2.5px;
-    border-color: lightblue;
-    border-radius: 12.5px;
-    
-    margin: 30px auto;
+    border-color: rgb(255, 0, 100);
+    border-radius: 5px;
 
-    cursor: pointer;
+    margin: 0px 10px;
 }
 
 img {
@@ -209,7 +224,7 @@ img {
     width: 100%;
     height: auto;
     max-height: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px lightgreen;
     transition: 300ms;
 
     padding: 5px;
@@ -252,7 +267,7 @@ img:hover {
     }
 }
 
-a#topo-button {
+a#inicio-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -265,12 +280,12 @@ a#topo-button {
 
     padding: 5px;
 
-    transition-duration: 50ms;
+    transition-duration: 250ms;
 
     &:hover {
-        color: rgb(0, 0, 100);
+        color: black;
         text-decoration: none;
-        scale: 1.05;
+        transform: scale(1.25);
     }
 }
 
